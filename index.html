@@ -1,6 +1,33 @@
 <html>
 <head><br>
   <H2>Los videojuegos mas esperados del 2014</H2>
+<script language="JavaScript" >
+<!--
+var hoy = new Date();
+dia = hoy.getDate();
+mes = hoy.getMonth();
+ano = hoy.getYear() + 1900;
+
+if (mes == "0") nombremes = "<font color=#FF0000 size 5>enero</font>";
+else if (mes == "1") nombremes = "<font color=#FF0000 size 5>febrero</font>";
+else if (mes == "2") nombremes = "<font color=#FF0000 SIZE=5>marzo</font>";
+else if (mes == "3") nombremes = "<font color=#FF0000 SIZE=5>abril</font>";
+else if (mes == "4") nombremes = "<font color=#FF0000 SIZE=5>mayo</font>";
+else if (mes == "5") nombremes = "<font color=#FF0000 SIZE=5>junio</font>";
+else if (mes == "6") nombremes = "<font color=#FF0000 SIZE=5>julio</font>";
+else if (mes == "7") nombremes = "<font color=#FF0000 SIZE=5>agosto</font>";
+else if (mes == "8") nombremes = "<font color=#FF0000 SIZE=5>septiembre</font>";
+else if (mes == "9") nombremes = "<font color=#FF0000 SIZE=5>octubre</font>";
+else if (mes == "10") nombremes = "<font color=#FF0000 SIZE=5>noviembre</font>";
+else nombremes = "<font color=#FF0000 SIZE=5>diciembre</font>";
+
+document.write (dia);
+document.write (" de ");
+document.write (nombremes);
+document.write (" de ");
+document.write (ano);
+// -->
+</script> 
   <br><br>
 </head>
 <body background= "http://fc06.deviantart.net/fs70/f/2014/134/d/b/sin_t_iacute_tulo_3_by_mncgaleno-d7idqeg.png">
@@ -50,5 +77,52 @@ Hay bastantes juegos que los gamers esperamos para este 2014, entre ellos los ma
  <label for="watch">Watch Dogs</label><br>
 Tu voto es muy importante para nosotros!
 </fieldset>
+
+<script language="JavaScript1.2">
+/*------------------------------------------------------------
+Document Text Sizer- Copyright 2003 - Taewook Kang.  All rights reserved.
+Coded by: Taewook Kang (txkang.REMOVETHIS@hotmail.com)
+Web Site: http://txkang.com
+Script featured on Dynamic Drive (http://www.dynamicdrive.com)
+--------------------------------------------------------------*/
+
+//Especificar a que elementos afectará, añadiendo o quitando de la lista:
+var tgs = new Array( 'div','td','tr');
+
+//Indicar el nombre de los diferentes tamaños de fuente:
+var szs = new Array( 'xx-small','x-small','small','medium','large','x-large','xx-large' );
+var startSz = 2;
+
+function ts( trgt,inc ) {
+if (!document.getElementById) return
+var d = document,cEl = null,sz = startSz,i,j,cTags;
+
+sz += inc;
+if ( sz < 0 ) sz = 0;
+if ( sz > 6 ) sz = 6;
+startSz = sz;
+
+if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
+
+cEl.style.fontSize = szs[ sz ];
+
+for ( i = 0 ; i < tgs.length ; i++ ) {
+cTags = cEl.getElementsByTagName( tgs[ i ] );
+for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
+}
+}
+</script>
+</HEAD>
+
+<BODY bgcolor="#00FFFF" >
+<CENTER>
+<h2>Zoom de p&aacute;gina</h2></center>
+
+<center>
+<a href="javascript:ts('body',1)">+ Aumentar</a> | <a
+href="javascript:ts('body',-1)">- Disminuir</a>
+</center>
+</script>
+
 </body>
 </html>
